@@ -1,21 +1,25 @@
 let deliveryCountry = prompt('Введите название вашей страны:');
-let normalizedDeliveryCountry = deliveryCountry.toLowerCase();
-let nameCountry = normalizedDeliveryCountry[0].toUpperCase() + normalizedDeliveryCountry.slice(1);
+let nameCountry = deliveryCountry[0].toUpperCase() + deliveryCountry.slice(1).toLowerCase();
 let cost;
+const china = 'Китай';
+const chile = 'Чили';
+const australia = 'Австралия';
+const india = 'Индия';
+const jamaica = 'Ямайка';
 switch (nameCountry) {
-    case 'Китай':
+    case china:
         cost = 100;
         break;
-    case 'Чили':
+    case chile:
         cost = 250;
         break;
-    case 'Австралия':
+    case australia:
         cost = 170;
         break;
-    case 'Индия':
+    case india:
         cost = 80;
         break;
-    case 'Ямайка':
+    case jamaica:
         cost = 120;
         break;
     default:

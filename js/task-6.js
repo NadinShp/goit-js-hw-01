@@ -6,7 +6,7 @@ do {
 
     if (input === null) {
         break;
-    }
+   }
 
     input = Number(input);
     const notANumber = Number.isNaN(input);
@@ -15,7 +15,7 @@ do {
         alert('Было введено не число, попробуйте еще раз');
         continue;
     }
-    total += input; 
+    total += input;
 }
-while (true) 
+while (input !== null)
 alert(`Общая сумма чисел равна ${total}`);

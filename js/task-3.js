@@ -12,4 +12,4 @@ else if (password === ADMIN_PASSWORD) {
 else {
     message = 'Доступ запрещен, неверный пароль!';
 }
-console.log(message);
+alert(message);
